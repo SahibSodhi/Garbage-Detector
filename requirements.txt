@@ -1,0 +1,9 @@
+Flask==1.0.3
+torch
+torchvision==0.2.1
+numpy==1.16.4
+PIL
+Keras==2.2.5
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.0
+tensorflow==1.14.0

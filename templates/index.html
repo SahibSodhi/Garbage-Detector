@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <link href='https://fonts.googleapis.com/css?family=Livvic' rel='stylesheet'>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+        body {
+          background-color: rgba(189,232,244,1);
+          font-family: 'Livvic';
+          font-size: 20px;
+          color:  black;
+        }
+        h1 {
+          color: black;
+          text-align: center;
+            font-style: bold;
+        }
+
+         h2 {
+          color: black;
+          text-align: center;
+            font-style: bold;
+        }
+
+        p {
+          font-family: 'Livvic';
+          font-size: 20px;
+          color: black;
+        }
+       .button {
+          background-color: #b8da8d;
+          border: none;
+          font-family: 'Livvic';
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="/static/style.css">
+    <img src="static/img/logo.png" height="200" alt="YOCCO logo"/><title>YOCCO Garbage Classification</title>
+      <br>
+  </head>
+  <body class="text-center">
+    <img src="https://media.giphy.com/media/pZd3cASYgZ7s4/giphy.gif" alt="Wall-E" vspace=80 style="border:15px solid white"/>
+
+    <form enctype="multipart/form-data" method="post">
+
+      <h2>Upload a picture of garbage!</h2>
+        <img src="static/img/arrow.png" alt="Upload arrow" vspace=40/>
+        <br>
+      <input type="file" name="file" accept="image/*" capture="camera" id="inputfile"></input>
+        <button type="submit">Upload</button>
+
+    </form>
+  </body>
+</html>

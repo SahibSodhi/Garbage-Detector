@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+            <link href='https://fonts.googleapis.com/css?family=Livvic' rel='stylesheet'>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+          }
+      }
+        body {
+          background-color: rgba(189,232,244,1);
+          font-family: 'Livvic';
+          font-size: 20px;
+          color:  black;
+        }
+        h1 {
+          color: black;
+          text-align: center;
+            font-style: bold;
+        }
+
+         h2 {
+          color: black;
+          text-align: center;
+            font-style: bold;
+        }
+
+        p {
+          font-family: 'Livvic';
+          font-size: 20px;
+          color: black;
+        }
+       .button {
+          background-color: #b8da8d;
+          border: none;
+          font-family: 'Livvic';
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+      img {
+          max-height:50%;
+          width:auto;
+        }
+
+         a {
+        color: black;
+        text-decoration: none;
+        font-family: 'Livvic';
+    }
+
+    </style>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <title>YOCCO Garbage Classification</title>
+  </head>
+  <body class="text-center">
+      <img src="static/img/logo.png" height="200" alt="YOCCO logo"/><title>YOCCO Garbage Classification</title>
+      <br>
+    <form class="form-signin" method=post enctype=multipart/form-data>
+
+        <br>
+        <table style="width:40%" align="center">
+          <tr>
+              <td align="left"><strong>Detected garbage type:</strong> </td>
+            <td align="left">{{ garbage_type }} ({{ class_name }})</td>
+          </tr>
+          <tr>
+              <td align="left"><strong>Detected material:</strong></td>
+               <td align="left">{{ waste_label }} ({{ waste_acc }}%)</td>
+          </tr>
+          <tr>
+            <td align="left"><strong>CO2 emission avoided:</strong></td>
+            <td align="left">{{ co }}g</td>
+          </tr>
+        </table>
+    </form>
+              <img src="static/temp/upload.jpg" height="400" alt="Uploaded image" vspace=50 style="border:15px solid white">
+    <br>
+    <img src="static/img/arrow_side.png" alt="arrow back" hspace=10><a href="./">Back</a>
+  </body>
+</html>
